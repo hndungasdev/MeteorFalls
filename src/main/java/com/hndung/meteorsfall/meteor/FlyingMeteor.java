@@ -57,7 +57,7 @@ public class FlyingMeteor {
 
         controlTask = plugin.getServer().getScheduler().runTaskTimer(plugin, () -> {
             for(BlockDisplay part : parts) {
-                part.teleport(part.getLocation().add(this.direction.clone().multiply(this.speed)));
+                part.teleport(part.getLocation().add(this.direction.clone().multiply(this.speed).add(this.direction.clone().multiply(this.speed).multiply(0.08))));
                 world.spawnParticle(Particle.FLAME, part.getLocation(), 2, 0.1, 0.1, 0.1, 0.01);
             }
             checkGround(world);
