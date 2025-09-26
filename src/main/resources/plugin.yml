@@ -1,0 +1,9 @@
+name: MeteorsFall
+version: '0.0.1'
+main: com.hndung.meteorsfall.MeteorsFall
+api-version: '1.21'
+commands:
+  summonmeteor:
+    description: Summon a random meteor for testing
+    usage: /summonmeteor
+    permission: meteors.summon
