@@ -51,6 +51,16 @@ public final class MeteorsFall extends JavaPlugin {
             meteor.init(spawn, destination, type);
             getServer().broadcast(Component.text("Đéo gì đấy sẽ rơi tại tọa độ x: " + x + ", y: " + y + ", z:" + z));
         }, 20L * time, 20L * time);
+        Bukkit.getConsoleSender().sendMessage(Utils.color("&a╔════════════════ MeteorsFall - 3fmc.com ═════════════════╗" ));
+        Bukkit.getConsoleSender().sendMessage(Utils.color("&a║                                                         ║" ));
+        Bukkit.getConsoleSender().sendMessage(Utils.color("&a║  Plugin: MeteorsFall - 3FMC Fight For Fap               ║" ));
+        Bukkit.getConsoleSender().sendMessage(Utils.color("&a║  Version:" + " " + this.getPluginMeta().getVersion() + "                                         ║" ));
+        Bukkit.getConsoleSender().sendMessage(Utils.color("&a║  Support: 1.21.x                                        ║" ));
+        Bukkit.getConsoleSender().sendMessage(Utils.color("&a║  Github: https://github.com/hndungasdev/MeteorFalls     ║" ));
+        Bukkit.getConsoleSender().sendMessage(Utils.color("&a║  Discord: https://discord.gg/6gz9vaA6                   ║" ));
+        Bukkit.getConsoleSender().sendMessage(Utils.color("&a║                                                         ║" ));
+        Bukkit.getConsoleSender().sendMessage(Utils.color("&a║                  -- Make with love --                   ║" ));
+        Bukkit.getConsoleSender().sendMessage(Utils.color("&a╚═════════════════════════════════════════════════════════╝"));
     }
 
     @Override
